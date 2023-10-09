@@ -13,7 +13,7 @@ class Stack {
 
   Pop() {
     if (this.isEmpty()) return null;
-    const Popd = this.items[0];
+    const Popd = this.items[this.length - 1];
     for (let i = this.length - 1; i > 0; i--) {
       this.items[i + 1] = this.items[i];
     }
